@@ -132,8 +132,9 @@
     var $city=$(".city");
     var $ulct=$(".ulct");
     var $cel=$(".cel");
-    $("a.btn").on("click",function () {//按钮点击
-        var value=$(".ipt").val();//拿到输入框的值
+    $("a.btn").on("click",function () {
+        var value=$(".ipt").val();
+        console.log($(".ipt").val());
         if(!value){
             alert("请输入城市");
             return;
@@ -142,7 +143,7 @@
         if($(this).data("lockajax")){
             $.ajax({
                 type: 'get',
-                url: 'https://api.jirengu.com/weather.php',
+                url: 'http://api.jirengu.com/weather.php',
                 data:{city:value},
                 dataType:'jsonp',
                 jsonp:'callback',
@@ -155,12 +156,7 @@
         }
     });
     function getCity(res){
-
-        console.log(res.results);
         $city.html(res.results[0].currentCity);
-        var chuanyi=res.results[0].index[0];
-        console.log((chuanyi.des));
-
         var temArray=res.results[0].weather_data; //接受天气数据的数组
         console.log(temArray);
         $(".ulct li img").each(function(index){
@@ -173,6 +169,8 @@
             $(this).siblings(".wind").html(temArray[index].wind); //获取风向及风力
         });
     }
+
+
 
 
 
