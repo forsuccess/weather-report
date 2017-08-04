@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <title>获取天气</title>
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./jquery-3.2.1.js"></script>
     <style>
 
         *{
@@ -143,7 +143,7 @@
         if($(this).data("lockajax")){
             $.ajax({
                 type: 'get',
-                url: 'https://api.jirengu.com/weather.php',
+                url: 'http://api.jirengu.com/weather.php',
                 data:{city:value},
                 dataType:'jsonp',
                 jsonp:'callback',
