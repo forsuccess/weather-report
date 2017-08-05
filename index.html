@@ -97,7 +97,7 @@
     <ul class="ulct">
         <li>
             <h4 class="fontColor data">今天</h4>
-            <img src="https://github.com/luchenyi/weather/blob/master/images/%E6%99%B4.png?raw=true" class="photo" alt="天气图片">
+            <img src="http://github.com/luchenyi/weather/blob/master/images/%E6%99%B4.png?raw=true" class="photo" alt="天气图片">
             <h2 class="fontColor cel">37 ~ 29℃</h2>
             <h4 class="fontColor weather">多云转阴</h4>
             <p class="week">周四 07月13日 (实时：36℃)</p>
@@ -107,7 +107,7 @@
 
         <li>
             <h4 class="fontColor data">明天</h4>
-            <img src="https://github.com/luchenyi/weather/blob/master/images/%E9%98%B4%E5%A4%A9.jpg?raw=true" class="photo" alt="天气图片">
+            <img src="http://github.com/luchenyi/weather/blob/master/images/%E9%98%B4%E5%A4%A9.jpg?raw=true" class="photo" alt="天气图片">
             <h2 class="fontColor cel">37 ~ 29℃</h2>
             <h4 class="fontColor weather">阴</h4>
             <p class="week">周五</p>
@@ -116,7 +116,7 @@
         </li>
         <li>
             <h4 class="fontColor data">后天</h4>
-            <img src="https://github.com/luchenyi/weather/blob/master/images/%E5%A4%9A%E4%BA%91.jpg?raw=true" class="photo" alt="天气图片">
+            <img src="http://github.com/luchenyi/weather/blob/master/images/%E5%A4%9A%E4%BA%91.jpg?raw=true" class="photo" alt="天气图片">
             <h2 class="fontColor cel">36 ~ 29℃</h2>
             <h4 class="fontColor weather">阴转多云</h4>
             <p class="week">周六</p>
@@ -143,7 +143,7 @@
         if($(this).data("lockajax")){
             $.ajax({
                 type: 'get',
-                url: 'https://api.jirengu.com/weather.php',
+                url: 'http://api.jirengu.com/weather.php',
                 data:{city:value},
                 dataType:'jsonp',
                 jsonp:'callback',
