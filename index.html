@@ -145,7 +145,7 @@
         if($(this).data("lockajax")){
             $.ajax({
                 type: 'get',
-                url: 'https://api.jirengu.com/weather.php',
+                url: 'https://weixin.jirengu.com/weather',
                 data:{city:value},
                 dataType:'jsonp',
                 jsonp:'callback',
